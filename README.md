@@ -5,34 +5,17 @@
 消息队列这两个简单的demo
 
 #### 软件架构
-软件架构说明
+springboot
+redis
 
 
 #### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
+1.本地安装redis 端口号为默认，如果redis配置有修改，请修改项目配置文件，使得一致
+2. 在properties中修改port为8080和8081分别打包
+3. java -jar ***.jar运行两个工程
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. localhost:8080/add-queue?message=123123 的post请求可以测试消息队列的处理，在控制台查看结果，两个工程随机一个处理了这条消息
+2. localhost:8080/add-topic?message=123123 的post请求可以测试消息发布订阅的处理，在控制台查看结果，两个工程都会收到这条消息
 
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
