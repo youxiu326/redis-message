@@ -16,6 +16,6 @@ redis
 
 #### 使用说明
 
-1. localhost:8080/add-queue?message=123123 的post请求可以测试消息队列的处理，在控制台查看结果，两个工程随机一个处理了这条消息
-2. localhost:8080/add-topic?message=123123 的post请求可以测试消息发布订阅的处理，在控制台查看结果，两个工程都会收到这条消息
+1. curl -d "message=queuemsg" http://localhost:8080/add-queue 可以测试消息队列的处理，在控制台查看结果，两个工程随机一个处理了这条消息
+2. curl -d "message=topicmsg" http://localhost:8080/add-topic 的post请求可以测试消息发布订阅的处理，在控制台查看结果，两个工程都会收到这条消息
 
