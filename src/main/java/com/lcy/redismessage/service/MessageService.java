@@ -35,7 +35,7 @@ public class MessageService {
     private String queueName;
 
     /**
-     * redis发布消息
+     * redis发布订阅消息
      *
      * @param message
      */
@@ -44,7 +44,7 @@ public class MessageService {
     }
 
     /**
-     * 处理redis消息队列
+     * 处理redis队列消息
      */
     public void dealMsg() {
         String message = redisUtil.rightPop(queueName, 1, TimeUnit.MINUTES);
@@ -54,6 +54,7 @@ public class MessageService {
     }
 
     /**
+     * redis发送队列消息
      * @param message
      */
     public void sendQueueMessage(String message) {
